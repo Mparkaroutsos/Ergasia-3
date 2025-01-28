@@ -13,9 +13,9 @@
 #define PORT 8080
 
 typedef struct {
-    char description[50]; // Περιγραφή του προϊόντος, π.χ. "Laptop" ή "Smartphone"
+    char description[50]; // Περιγραφή του προϊόντος
     float price;          // Τιμή του προϊόντος σε ευρώ
-    int item_count;       // Διαθέσιμη ποσότητα του προϊόντος στο κατάστημα
+    int item_count;       // Stock του προϊόντος στο κατάστημα
 } Product;
 
 typedef struct {
@@ -24,7 +24,7 @@ typedef struct {
 } Order;
 
 typedef struct {
-    int client_id;        // Αναγνωριστικό του πελάτη που κάνει την παραγγελία
+    int client_id;        // ID του πελάτη που κάνει την παραγγελία
     Order orders[MAX_ORDERS_PER_CLIENT]; // Λίστα με τις παραγγελίες του πελάτη
 } ClientRequest;
 
