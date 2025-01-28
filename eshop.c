@@ -1,4 +1,3 @@
-// common.h - Κοινές σταθερές και δομές δεδομένων
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
