@@ -5,7 +5,7 @@
 #include <unistd.h>
 #include <arpa/inet.h>
 #include <sys/socket.h>
-#include <pthread.h>
+
 
 #define MAX_PRODUCTS 20
 #define MAX_CLIENTS 5
